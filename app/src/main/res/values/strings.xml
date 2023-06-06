@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Calculadora de Madera</string>
+    <string name="broad_wooden">Ancho en pulgadas</string>
+    <string name="thickness_wood">grosor en pulgadas</string>
+    <string name="option_wooden">Precio de la madera</string>
+    <string name="calculate">Calcular</string>
+    <string name="price_this">El precio es: %1$d</string>
+    <string name="number_warning">Ingrese un numero valido por favor</string>
+</resources>
