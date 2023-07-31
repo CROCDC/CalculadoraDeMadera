@@ -1,16 +1,17 @@
 package com.example.woodencalculator
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
+import com.example.woodencalculator.vm.SquarePriceViewModel
 import junit.framework.TestCase.assertEquals
 import org.junit.Rule
 import org.junit.Test
 
-class MainViewModelTest {
+class SquarePriceViewModelTest {
 
     @get:Rule
     val rule = InstantTaskExecutorRule()
 
-    private val viewModel = MainViewModel()
+    private val viewModel = SquarePriceViewModel()
 
     @Test
     fun case1() {
