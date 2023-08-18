@@ -1,7 +1,16 @@
 package com.example.woodencalculator.vm.usecases
 
-interface SquareUseCase : XInchesUseCase {
-    override fun calculatePrice(): Int? {
+import androidx.lifecycle.MutableLiveData
+
+interface SquareDelegate : InchesDelegate
+
+class SquareDelegateImpl : SquareDelegate {
+
+    override val inchesThickness: MutableLiveData<Int> = MutableLiveData()
+    override val inchesWidth: MutableLiveData<Int> = MutableLiveData()
+    override val priceInches: MutableLiveData<Int> = MutableLiveData()
+
+    override fun calculatePrice(): Result? {
         val inchesThicknessValue = inchesThickness.value
         val inchesWidthValue = inchesWidth.value
 
@@ -10,9 +19,10 @@ interface SquareUseCase : XInchesUseCase {
             val volume = inchesThicknessValue * inchesWidthValue * CONST_RADIO
             val volumeMeter = volume * (inchesWidthValue / INCHES_TO_METERS)
             volumeMeter * priceInchesValue
+            Result((volumeMeter * priceInchesValue), 0)
         } else {
             null
-        }?.toInt()
+        }
     }
 
     companion object {

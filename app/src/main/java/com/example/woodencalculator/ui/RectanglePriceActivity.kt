@@ -13,7 +13,7 @@ import com.example.woodencalculator.vm.RectanglePriceViewModel
 
 class RectanglePriceActivity : AppCompatActivity() {
 
-    private val viewModel: RectanglePriceViewModel by viewModels()
+    private val viewModel: RectanglePriceViewModel by viewModels { RectanglePriceViewModel.FACTORY }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

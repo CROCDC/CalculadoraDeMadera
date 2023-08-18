@@ -1,21 +1,19 @@
 package com.example.woodencalculator.ui
 
 import android.os.Bundle
-import android.text.Editable
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.widget.addTextChangedListener
 import androidx.databinding.DataBindingUtil
-import com.example.woodencalculator.vm.SquarePriceViewModel
 import com.example.woodencalculator.R
 import com.example.woodencalculator.databinding.ActivitySquarePriceBinding
 import com.example.woodencalculator.utils.toInt
+import com.example.woodencalculator.vm.SquarePriceViewModel
 
 class SquarePriceActivity : AppCompatActivity() {
 
-    private val viewModel: SquarePriceViewModel by viewModels()
+    private val viewModel: SquarePriceViewModel by viewModels { SquarePriceViewModel.FACTORY }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
