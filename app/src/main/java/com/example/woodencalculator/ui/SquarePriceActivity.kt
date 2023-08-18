@@ -48,7 +48,8 @@ class SquarePriceActivity : AppCompatActivity() {
         binding.btnCalculate.setOnClickListener {
             val price = viewModel.calculatePrice()
             if (price != null) {
-                binding.txtPrice.text = getString(R.string.price_this, viewModel.calculatePrice())
+                binding.txtPrice.text =
+                    getString(R.string.price_this, viewModel.calculatePrice()?.price)
             } else {
                 binding.txtPrice.setText(R.string.price_calculate_fail)
             }

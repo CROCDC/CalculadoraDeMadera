@@ -5,7 +5,7 @@
     <string name="thickness_wood">Grosor en pulgadas</string>
     <string name="option_wooden">Precio de la madera por pie2</string>
     <string name="calculate">Calcular</string>
-    <string name="price_this">El precio es: %1$d</string>
+    <string name="price_this">El precio es: %.2f</string>
     <string name="number_warning">Ingrese un numero valido por favor</string>
     <string name="price_calculate_fail">el calculo fallo, revise que esten todos los datos requeridos</string>
     <string name="calculate_square_price">Calcular Precio Cuadrado</string>
