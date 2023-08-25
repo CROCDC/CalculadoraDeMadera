@@ -12,10 +12,10 @@
         android:theme="@style/AppTheme"
         tools:targetApi="31">
         <activity
-            android:name=".ui.RectanglePriceActivity"
+            android:name="com.cr.o.cdc.woodencalculator.ui.RectanglePriceActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.MainActivity"
+            android:name="com.cr.o.cdc.woodencalculator.ui.MainActivity"
             android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -25,7 +25,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.SquarePriceActivity"
+            android:name="com.cr.o.cdc.woodencalculator.ui.SquarePriceActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
     </application>

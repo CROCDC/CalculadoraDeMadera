@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Calculadora de Madera</string>
+    <string name="app_name">Calculadora para Madera</string>
     <string name="inches_width">Ancho en pulgadas</string>
     <string name="inches_large">Largo en pulgadas</string>
     <string name="thickness_wood">Grosor en pulgadas</string>
@@ -8,6 +8,8 @@
     <string name="price_this">El precio es: %.2f</string>
     <string name="number_warning">Ingrese un numero valido por favor</string>
     <string name="price_calculate_fail">el calculo fallo, revise que esten todos los datos requeridos</string>
-    <string name="calculate_square_price">Calcular Precio Cuadrado</string>
-    <string name="calculate_rectangle_price">Calcular Precio Rectangular</string>
+    <string name="square">Cuadrado</string>
+    <string name="rectangle">Rectangular</string>
+    <string name="title_calculate_price">Calcular Precio</string>
+    <string name="select_style">Elegi tu estilo de corte</string>
 </resources>

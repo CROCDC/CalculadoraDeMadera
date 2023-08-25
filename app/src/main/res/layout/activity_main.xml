@@ -1,33 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="?attr/colorPrimaryContainer">
 
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/title_calculate_price"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toTopOf="@id/txt_subtitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/txt_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/select_style"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@id/btn_square"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_title" />
+
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_square"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="12dp"
-            android:text="@string/calculate_square_price"
+            android:elevation="6dp"
+            android:text="@string/square"
             android:textSize="30sp"
             app:cornerRadius="6dp"
             app:layout_constraintBottom_toTopOf="@id/btn_rectangle"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@id/txt_subtitle" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_rectangle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="12dp"
-            android:text="@string/calculate_rectangle_price"
+            android:elevation="6dp"
+            android:text="@string/rectangle"
             android:textSize="30sp"
             app:cornerRadius="6dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/btn_square" />
+            app:layout_constraintTop_toBottomOf="@id/btn_square"
+            tools:layout_editor_absoluteX="12dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
