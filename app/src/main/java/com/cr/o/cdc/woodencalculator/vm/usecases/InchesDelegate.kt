@@ -1,7 +1,7 @@
-package com.example.woodencalculator.vm.usecases
+package com.cr.o.cdc.woodencalculator.vm.usecases
 
 import androidx.lifecycle.MutableLiveData
-import com.example.woodencalculator.utils.setValueIfNotNull
+import com.cr.o.cdc.woodencalculator.utils.setValueIfNotNull
 
 interface InchesDelegate {
     val inchesThickness: MutableLiveData<Int>
@@ -16,12 +16,12 @@ interface InchesDelegate {
         inchesThickness.setValueIfNotNull(inchesThicknesss)
     }
 
-    fun setInchesWidth(inchesWidthh: Int?) {
-        inchesWidth.setValueIfNotNull(inchesWidthh)
+    fun setInchesWidth(inchesWidth: Int?) {
+        this.inchesWidth.setValueIfNotNull(inchesWidth)
     }
 
-    fun setPriceInches(priceInchess: Int?) {
-        priceInches.setValueIfNotNull(priceInchess)
+    fun setPriceInches(priceInches: Int?) {
+        this.priceInches.setValueIfNotNull(priceInches)
     }
 }
 

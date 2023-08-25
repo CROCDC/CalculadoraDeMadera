@@ -1,7 +1,7 @@
-package com.example.woodencalculator.vm.usecases
+package com.cr.o.cdc.woodencalculator.vm.usecases
 
 import androidx.lifecycle.MutableLiveData
-import com.example.woodencalculator.utils.setValueIfNotNull
+import com.cr.o.cdc.woodencalculator.utils.setValueIfNotNull
 
 interface RectanglePriceDelegate : InchesDelegate {
 
@@ -28,7 +28,7 @@ class RectanglePriceDelegateImpl : RectanglePriceDelegate {
         return if (inchesThicknessValue != null && inchesWidthValue != null
             && priceInchesValue != null && inchesLargeValue != null
         ) {
-            val pie2 = (inchesThicknessValue * inchesWidthValue * inchesLargeValue) / 144.0
+            val pie2 = ((inchesThicknessValue * inchesWidthValue) * inchesLargeValue) / 144.0
             pie2 * priceInchesValue
             Result((pie2 * priceInchesValue), pie2.toInt())
         } else {
